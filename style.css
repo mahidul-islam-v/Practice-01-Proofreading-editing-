@@ -1,0 +1,682 @@
+
+/* hero */
+
+#hero {
+   padding: 1;
+   min-height: 100vh;
+   width: 100%;
+}
+
+/* top bar */
+.top-bar {
+   height: 3.5vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.top-bar-hr {
+   width: 100%;
+   border: 1px solid #ddddddb5;
+   margin: 0;
+}
+
+.top-bar-left a{
+   user-select: none;
+   position: relative;
+   left: 30px;
+   margin-right: 50px;
+}
+
+
+.top-bar-email {
+   position: absolute;
+   top: 2px;
+   left: -30px;
+   height: 20px;
+}
+
+.email:hover, .number:hover {
+   color: var(--header);
+   text-decoration: underline;
+}
+
+.top-bar-telephone {
+   position: absolute;
+   top: 2px;
+   left: -30px;
+   height: 20px;
+}
+
+.top-bar-right img{
+   top: -2px;
+   position: relative;
+   margin-left: 24px;
+   height: 16px;
+   transition: 0.25s ease;
+}
+
+.top-bar-right img:hover {
+   top: -3px;
+   scale: 1.1;
+}
+
+/* nav bar */
+
+nav {
+   position: relative;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-left {
+   display: flex;
+   justify-content: center;
+}
+
+.nav-left lord-icon{
+   position: relative;
+   left: -10px;
+   height: 60px;
+   width: 60px;
+   padding-left: 10px;
+}
+
+.nav-mid a {
+   display: inline-block;
+   padding: 20px 20px;
+   transition: background-color 0.25s ease;
+   border-radius: 5px;
+}
+
+.nav-mid a:hover {
+   background-color: #ddddddb5;
+}
+
+.nav-right button {
+   color: var(--background);
+   padding: 10px 30px;
+   border: 0px solid;
+   background-color: var(--primary);
+   border-radius: 5px;
+   transition: 0.25s ease;
+}
+
+.nav-right button:hover {
+   transform: translate(-3px, -2.5px) ;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   transition: 0.125s ease;
+}
+
+.nav-right button:hover:active {
+   transform: translate(-1.5px, -1px) scale(0.9875);
+   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.24),0 1px 25px 0 rgba(0,0,0,0.19);
+}
+
+/* hero */
+
+.hero {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 80vh;
+   background-image: url(images/heroBackground.jpg);
+   background-size: cover;
+   background-position: top right;
+}
+
+.hero::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   background: linear-gradient(90deg, rgba(16,44,80,1) 0%,rgba(16,44,80,1) 40%, rgba(16,44,80,0) 60%, rgba(16,44,80,0) 100%);
+}
+
+.hero-text {
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+}
+
+.hero-text>h5 {
+   margin-bottom: 8px;
+}
+
+.hero-text>h1 {
+   margin-bottom: 36px;
+}
+
+.hero-text h5 {
+   color: var(--background);
+   font-family: var(--inter);
+}
+
+.calculate-price, .free-sample {
+   display: inline-block;
+   width: max-content;
+   padding: 20px 36px;
+   margin: 0 5px 0 0;
+   border: 0px solid;
+   background-color: var(--primary);
+   border-radius: 5px;
+   transition: 0.25s ease;
+}
+
+.calculate-price:hover, .free-sample:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   transition: 0.125s ease;
+}
+
+.calculate-price:hover:active, .free-sample:hover:active {
+   transform: scale(0.975);
+   box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24),0 1px 50px 0 rgba(0,0,0,0.19);
+}
+
+.calculate-price {
+   background-color: var(--background);
+}
+
+.calculate-price h5 {
+   color: var(--header);
+}
+
+/* about */
+
+.about {
+   margin: 60px 0 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.about-left {
+   margin: 60px 0 0 0;
+}
+
+.about>div {
+   width: 40%;
+}
+
+.about>div h5 {
+   margin-top: 10px;
+}
+
+.about>div h2 {
+   margin-top: 15px;
+}
+
+.about>div p {
+   color: var(--text);
+   margin-top: 30px;
+}
+
+.get-started {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: var(--primary);
+   padding: 15px 18px;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   transition: 0.25s ease;
+}
+
+.get-started:hover {
+   padding: 15px 18px 15px 25px;
+   gap: 40px;
+}
+
+.get-started:hover:active {
+   padding: 15px 18px 15px 22px;
+   gap: 35px;
+}
+
+.get-started p {
+   margin: 0 !important;
+   color: var(--background) !important;
+}
+
+.about-right {
+   position: relative;
+}
+
+.about-right-left{
+   position: relative;
+   height: 100%;
+   width: 80%;
+   background-image: url(images/aboutImage.jpg);
+   background-size: cover;
+   background-position: left;
+   border-radius: 5px;
+}
+
+.about-right-left::before {
+   content: "";
+   position: absolute;
+   background-color: #102c5b4f;
+   height: 100%;
+   width: 100%;
+}
+
+.about-right-right {
+   padding: 5% 5%;
+   position: absolute;
+   right: 0;
+   top: 20%;
+   width: 55%;
+   background: var(--primary);
+   border-radius: 5px;
+   transform: scale3d(0.99, 0.99,);
+   transition: 0.25s ease;
+}
+
+.about-right-right img {
+   height: 73px;
+}
+
+.about-right-right span {
+   top: 20%;
+   bottom: 20%;
+   width: 5px;
+   background-color: var(--header);
+   position: absolute;
+   right: 0;
+   border-radius: 5px;
+   transition: 0.25s ease;
+}
+
+.about-right-right p {
+   margin-top: 16px !important;
+   color: var(--background) !important;
+}
+
+.about-white, .about-blue {
+   margin: 5% 0 10% 0;
+   display: inline-block;
+   background-color: var(--header);
+   width: 10%;
+   height: 5px;
+   border-radius: 5px;
+}
+
+.about-white {
+   background-color: var(--background);
+   width: 15%;
+}
+
+/* services */
+
+#services {
+   width: 100%;
+   padding: 120px 0;
+}
+
+.services {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.services-header {
+   width: 550px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+/* ? couldnt figure out this part */
+/* all the cards have a padding on the bottom until the .row heigh is set to fit-contennt */
+
+#services .row {
+   min-width: 400px;
+   gap: 30px;
+}
+
+#services .col {
+   border-radius: 7.5px;
+   padding: 12px;
+   box-shadow: 0 0 30px 5px #0000000c;
+   transition: 0.5s ease;
+}
+
+#services .col:hover {
+   box-shadow: 0 0 30px 10px #0000001c;
+}
+
+#services .col img {
+   object-fit: cover;
+   border-radius: 5px;
+   width: 100%;
+   height: 40%;
+}
+
+#services .col h3 {
+   margin: 28px 0 15px 0;
+}
+
+#services .col p {
+   color: var(--text);
+}
+
+#services hr {
+   border: 1px solid var(--header);
+   opacity: 0.5;
+   border-radius: 2px;
+}
+
+#services .col div {
+   display: flex;
+   justify-content: space-between;
+   padding-right: 10px;
+   align-items: center;
+}
+
+#services .arrow-button {
+   height: 30px;
+}
+
+#services lord-icon {
+   rotate: 90deg;
+}
+
+#services button {
+   margin-top: 60px;
+}
+
+/* pricing */
+
+#pricing {
+   padding: 120px 0;
+   background-image: url(images/pricingBackground.png);
+   background-size: cover;
+   background-position: center;
+}
+
+#pricing::before {
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: #102C5BE6;
+   top: 0;
+}
+
+#pricing * {
+   text-align: center;
+   z-index: 1;
+   color: var(--background);
+}
+
+#pricing h4 {
+   margin: 20px 0 35px 0;
+}
+
+#pricing .container {
+   gap: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+#pricing .calculate-price h5{
+   color: var(--header) !important;
+}
+
+#pricing .calculate-price {
+   margin-bottom: 10px;
+}
+
+/* process */
+
+#process {
+   padding: 100px 0;
+}
+
+.process {
+   text-align: center;
+}
+
+.process .container {
+   margin-top: 70px;
+}
+
+.process .row {
+   position: relative;
+   gap: 20px;
+}
+
+.process .col {
+   text-align: left;
+}
+
+.process .col img {
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+}
+
+.process .col h3 {
+   margin: 28px 0 12px;
+}
+
+.process .col p {
+   color: black !important;
+}
+
+
+.curved-arrow-1 {
+   position: absolute;
+   width: 25%;
+   rotate: -20deg;
+   left: 10%;
+}
+
+.curved-arrow-2 {
+   position: absolute;
+   right: 35%;
+   width: 20%;
+   rotate: 30deg;
+   transform: scaleX(-1);
+}
+
+/* who-we-are */
+
+.who-we-are .row{
+   gap: 65px;
+}
+
+.we-are-left {
+   position: relative;
+}
+
+.we-are-left div {
+   border-radius: 10px;
+   width: 80%;
+   height: 90%;
+   background-image: url(images/weWork.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.we-are-left h3 {
+   position: absolute;
+   bottom: -8px;
+   right: 0;
+   text-align: center;
+   background: var(--header);
+   color: var(--background);
+   padding: 25px 35px;
+   border-radius: 10px;
+}
+
+.we-are-right {
+   margin: 50px 0 200px;
+}
+
+.we-are-right h2 {
+   margin: 10px 0 15px;
+}
+
+.we-are-right p {
+   margin-bottom: 30px;
+}
+
+/* format */
+
+#format {
+   padding: 110px 0;
+}
+
+.format .container {
+   padding: 0;
+}
+
+.format {
+   text-align: center;
+}
+
+.my-row {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   gap: 30px;
+   margin-top: 60px;
+}
+
+.my-col {
+   background-color: #F3F6FD;
+   border: 1px solid #102C5B1A;
+   border-radius: 10px;
+}
+
+.my-col img {
+   margin: 30px 0 25px;
+}
+
+.my-col p {
+   color: var(--text) !important;
+   font-weight: 600;
+}
+
+/* footer */
+
+#footer {
+   padding: 110px 0 0;
+   background-color: var(--header);
+   color: var(--background);
+}
+
+#footer * {
+   color: var(--background) !important;
+}
+
+#footer>.container>.row {
+   padding-bottom: 90px;
+}
+
+#footer div>lord-icon {
+   position: relative;
+   left: -5px;
+   width: 50px;
+   height: 50px;
+   margin-bottom: 10px;
+}
+
+#footer div>p {
+   padding-right: 100px;
+}
+
+#footer .col8 {
+   padding-left: 100px;
+}
+
+#footer .col4 a {
+   display: block;
+   padding-bottom: 20px;
+}
+
+#footer .col8 div {
+   height: 50px;
+   position: relative;
+}
+
+#footer h3 {
+   padding-bottom: 20px;
+}
+
+#footer .col8 button {
+   position: absolute;
+   height: 100%;
+   right: 0;
+   top: 0;
+   width: 25%;
+   border: 0 solid;
+   border-radius: 0 5px 5px 0;
+   background: var(--primary);
+}
+
+#footer .col8 lord-icon {
+   width: 50px;
+   height: 50px;
+}
+
+#footer a:hover {
+   text-decoration: underline;
+}
+
+#footer input {
+   transition: 0.1s ease;
+   padding-left: 20px;
+   border: 0 solid;
+   height: 100%;
+   border-radius: 5px 0 0 5px;
+   width: 75%;
+   color: black !important;
+   font-family: var(--inter) !important;
+}
+
+#footer input:focus {
+   outline: var(--primary) solid 5px;
+   border-radius: 5px
+}
+
+#footer .col8 div {
+   margin-bottom: 40px;
+}
+
+#footer .col8 img {
+   margin-right: 15px;
+   background-color: none;
+   height: 40px;
+   width: 40px;
+   transition: 0.125s ease;
+   border-radius: 10px;
+   scale: 1;
+}
+
+#footer .col8 img:hover {
+   scale: 1.025;
+   background-color: var(--primary);
+}
+
+.bottom-bar {
+   display: flex;
+   justify-content: space-between;
+}
+
+.bottom-bar * {
+   font-family: var(--roboto) !important;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.bottom-bar div {
+   display: flex;
+}

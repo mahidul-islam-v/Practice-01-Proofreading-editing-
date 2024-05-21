@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+   --background: #ffffff;
+   --primary: #1BB275;
+   --header: #102c5b;
+   --text: #999999;
+   --inter: "Inter", sans-serif;
+   --poppins: "Poppins", sans-serif;
+   --roboto: "Roboto", sans-serif;
+   --motion-ease: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   --motion-duration: 0.3s;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   overflow-x: hidden;
+}
+a {
+   color: #333333;
+   font-family: var(--poppins);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   text-decoration: none;
+}
+section {
+   position: relative;
+   padding: 0 0;
+}
+h1 {
+   color: var(--background);
+   font-family: var(--inter);
+   font-size: 52px;
+   line-height: 60px;
+   font-weight: 600;
+}
+h2 {
+   color: var(--header);
+   font-family: var(--poppins);
+   font-size: 36px;
+   line-height: 42px;
+   font-weight: 600;
+}
+h3 {
+   color: var(--header);
+   font-family: var(--poppins);
+   font-size: 26px;
+   line-height: 38px;
+   font-weight: 500;
+}
+h4 {
+   color: var(--primary);
+   font-family: var(--poppins);
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 27px;
+}
+h5 {
+   color: var(--primary);
+   font-family: var(--poppins);
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;
+   margin: 0;
+}
+p {
+   color: var(--header);
+   font-family: var(--poppins);
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 27px;
+}

@@ -1,0 +1,230 @@
+@media (min-width: 1400px) {
+   .about-right-right:hover {
+      top: 17.5%;
+      padding: 10% 5%;
+   }.about-right-right:hover span {
+      top: 0;
+      bottom: 0;
+   }
+}
+
+@media (max-width: 1400px) {
+   .hero::before {
+      background: linear-gradient(90deg, rgba(16,44,80,1) 0%,rgba(16,44,80,1) 55%, rgba(16,44,80,0) 75%, rgba(16,44,80,0) 100%);
+   }
+
+   .about>div {
+      width: 45%;
+   }.about-right-left {
+      height: 80%;
+      width: 70%;
+   }
+
+   #footer .col-xl {
+      margin-bottom: 60px;
+   }
+}
+
+@media (max-width: 1200px) {
+   .about>div {
+      width: 47.5%;
+   }.about-right-left {
+      height: 80%;
+      width: 85%;
+   }.about-right-right {
+      width: 60%;
+   }
+   
+   .curved-arrow-1 {
+      left: 11%;
+   }
+   .curved-arrow-2 {
+      right: 33%;
+      top: 10px;
+   }
+}
+
+@media (max-width: 990px) {
+   .hero::before {
+      background: rgba(16,44,80,0.75);
+   }
+
+   .my-row {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+
+   .about-right-left {
+      display: none;
+   }.about-left {
+      width: 60% !important;
+   }.about-right-right {
+      bottom: 20%;
+      top: auto;
+      width: 80%;
+   }
+
+   .curved-arrow-1 {
+      top: 30px;
+      width: 22.5%;
+      left: 15%;
+   }
+   .curved-arrow-2 {
+      right: 30%;
+   }
+
+   #who-we-are {
+      background-image: url(images/weWork.png);
+      background-position: center;
+      background-size: cover;
+      z-index: 0;
+   }#who-we-are::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(16,44,80,0.75);
+      z-index: 1;
+   }.we-are-left {
+      display: none;
+   }.we-are-right {
+      z-index: 2;
+      margin: 150px 0 100px;
+   }.we-are-right h2 {
+      color: var(--background) !important;
+   }.we-are-right p {
+      color: var(--text);
+   }
+}
+
+.toggle-nav, .toggle-background {
+   display: none;
+}
+
+@media (max-width: 768px) {
+   h1 {
+      font-size: 60px;
+   }
+
+   .top-bar-right {
+      display: none;
+   }
+
+   .try-for-free {
+      display: none;
+   }
+
+   .toggle-background {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 10;
+      background-color: var(--background);
+      width: 0%;
+      transition: 0.4s ease;
+   }.nav-mid {
+      position: relative;
+      z-index: 100;
+      width: 100%;
+      height: 80vh;
+      display: none;
+      flex-direction: column;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+   }.nav-mid a {
+      width: fit-content;
+      font-size: 44px;
+      padding: 0;
+      font-weight: 600;
+   }.nav-mid a:hover{
+      background-color: var(--background);
+      font-weight: 700;
+   }.toggle-nav {
+      display: inline-block;
+      border: 2.5px solid var(--header);
+      border-radius: 5px;
+      padding: 5px 10px 0;
+      background-color: var(--background);
+   }.toggle-background div {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      right: 0;
+      z-index: 1001;
+      display: inline-block;
+      padding: 5px 10px 0;
+      border: 2.5px solid var(--header);
+      border-radius: 5px 0 5px 5px;
+   }
+
+   @keyframes bloom {
+      from {
+         opacity: 0;
+      } to {
+         opacity: 1;
+      }
+   }
+
+   .about-right {
+      display: none;
+   }.about-left {
+      width: 100% !important;
+   }
+
+   .my-row {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .curved-arrow-1 {
+      top: 30px;
+      width: 35%;
+      left: 20%;
+   }
+   .curved-arrow-2 {
+      left: 25%;
+      width: 30%;
+      top: 350px;
+      transform: scaleX(1) rotate(-75deg);
+   }
+
+   #who-we-are {
+      background-position: left;
+   }
+
+   #footer .col8 {
+      margin-top: 60px;
+      padding: 0;
+      width: 80%;
+   }.bottom-bar * {
+      font-size: 12px;
+   }.sabrcaraib {
+      margin-left: 10px;
+   }
+}
+
+@media (max-width: 576px) {
+   .services-header {
+      width: 100%;
+   }
+
+   .curved-arrow-1 {
+    display: none;
+   }
+   .curved-arrow-2 {
+     display: none;
+   }
+
+   .process h3 {
+      font-size: 26px;
+      line-height: 30px;
+   }
+
+   #who-we-are::before {
+      background-color: rgba(16,44,80,0.9);
+   }
+}
